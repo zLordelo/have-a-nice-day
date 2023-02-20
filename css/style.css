@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #F2D54B;   
+
+    display: grid;
+    place-content: center;
+}
+
+body * {
+    font-family: 'Rubik Mono One', sans-serif;   
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    display: none;
+}
+
+.start-btn {
+    width: 278px;
+    height: 70px;
+    color: #fff;
+    background: #1C1B1F;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.view1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    display: none;
+}
+
+.view1 .player {
+    display: flex;
+    width: 249px;
+    height: 80px;
+    margin-bottom: 100px;
+
+    background: rgba(28, 27, 31, 0.9);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color: #fff
+}
+
+.info-player {
+    padding-top: 7px;
+    padding-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.info-player div:last-child {
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.view1 .player div {
+    font-size: 12px;
+    text-align: left;
+}
+
+.view1 .player div p {
+    font-family: 'Rubik';
+    font-weight: 700;
+}
+
+.view1 .player div:last-child img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.view1 #darkMode {
+    cursor: pointer;
+    margin-bottom: 25px;
+}

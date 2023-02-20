@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Have a Nice Day</title>
+</head>
+<body>
+    <audio src="./assets/Post Malone - Sunflower (ft. Swae Lee).mp3" id="music"></audio>
+    <div class="start">
+        <button class="start-btn">Start</button>
+    </div>
+    
+    <div class="view1">
+        <div class="player">
+            <img src="./assets/art-work-audio.svg" alt="imagem do álbum">
+
+            <div class="info-player">
+                <div>
+                    <p>SUNFLOWER</p>
+                    <p>Post Malone ft. Swae Lee</p>
+                </div>
+
+                <div>
+                    <img src="./assets/mute.svg" alt="mute button" onclick="mute()">
+                    <img src="./assets/play-pause.svg" alt="play/pause button" onclick="playPause()">
+                    <img src="./assets/unmute.svg" alt="unmute button" onclick="unmute()">
+                </div>                
+            </div>
+        </div>
+
+        <img src="./assets/btn-dark-mode.svg" alt="Botão dark mode" id="darkMode" onclick="darkMode()">
+
+        <p>tem um texto escondido,<br>e ele só faz sentido<br>em dark mode, <br>toca no botão acima.</p>
+    </div>
+
+    <div>
+        <button id="btnPlay" onclick="myFunc()">play</button>
+        <video id="video"></video>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
