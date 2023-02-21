@@ -40,8 +40,8 @@ btnCamera.addEventListener("click", (event) => {
     const constraints = {
     video: { facingMode: "user" },
     audio: false,
-    width: 350,
-    height: 420,
+    width: 1920,
+    height: 1080,
     };
 
     navigator.mediaDevices
