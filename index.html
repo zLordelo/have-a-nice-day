@@ -14,11 +14,11 @@
 </head>
 <body>
     <audio src="./assets/Post Malone - Sunflower (ft. Swae Lee).mp3" id="music"></audio>
-    <div class="start">
-        <button class="start-btn">Start</button>
+    <div class="content" id="startPage">
+        <button class="start-btn" id="startButton">Start</button>
     </div>
     
-    <div class="view1">
+    <div class="view1 hidden" id="page1">
         <div class="player">
             <img src="./assets/art-work-audio.svg" alt="imagem do álbum">
 
@@ -36,12 +36,12 @@
             </div>
         </div>
 
-        <img src="./assets/btn-dark-mode.svg" alt="Botão dark mode" id="darkMode" onclick="darkMode()">
+        <p class="text">Sabe o "Espelho, espelho meu...", dizem que ele mostra, a mulher mais bela, faz o teste.</p>
 
-        <p>tem um texto escondido,<br>e ele só faz sentido<br>em dark mode, <br>toca no botão acima.</p>
+        <img src="./assets/camera.svg" alt="access camera" id="camera">
     </div>
 
-    <div>
+    <div id="page2" class="hidden">      
         <video id="video" autoplay></video>
     </div>
 
