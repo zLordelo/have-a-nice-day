@@ -43,6 +43,7 @@ btnCamera.addEventListener("click", (event) => {
     width: 350,
     height: 420,
     };
+    
     navigator.mediaDevices
     .getUserMedia(constraints)
     .then((stream) => {
