@@ -30,11 +30,11 @@ body * {
 }
 
 .content {
-    width: 350px;
-    height: 500px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+    width: 350px;
+    height: 600px;
 }
 
 .start-btn {
@@ -57,7 +57,7 @@ body * {
     animation: transitionIn 2s;
 }
 
-.view1 .player {
+.player {
     display: flex;
     width: 249px;
     height: 80px;
@@ -84,17 +84,18 @@ body * {
     justify-content: space-between;
 }
 
-.view1 .player div {
+.player div {
     font-size: 12px;
     text-align: left;
 }
 
-.view1 .player div p {
+.player div p {
     font-family: 'Rubik';
     font-weight: 700;
+    font-size: 10px;
 }
 
-.view1 .player div:last-child img {
+.player div:last-child img {
     width: 24px;
     height: 24px;
     cursor: pointer;
@@ -115,7 +116,17 @@ body * {
 }
 
 .text {
-    text-align: center;
     font-size: 14px;
-    padding: 0 20px;
+    padding: 0 30px;
+}
+
+#page2 .player {
+    margin-bottom: 50px;
+}
+
+video {
+    width: 350px;
+    height: 420px;
+    border: 1px solid black;
+    border-radius: .2rem;
 }

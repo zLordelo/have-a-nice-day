@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/747ccd97e4.js" crossorigin="anonymous"></script>
 
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
@@ -18,31 +19,51 @@
         <button class="start-btn" id="startButton">Start</button>
     </div>
     
-    <div class="view1 hidden" id="page1">
-        <div class="player">
-            <img src="./assets/art-work-audio.svg" alt="imagem do álbum">
+    <div class="content hidden" id="page1">
+        <div class="view1">
+            <div class="player">
+                <img src="./assets/art-work-audio.svg" alt="imagem do álbum">
 
-            <div class="info-player">
-                <div>
-                    <p>SUNFLOWER</p>
-                    <p>Post Malone ft. Swae Lee</p>
+                <div class="info-player">
+                    <div>
+                        <p>SUNFLOWER</p>
+                        <p>Post Malone ft. Swae Lee</p>
+                    </div>
+
+                    <div>
+                        <img src="./assets/mute.svg" alt="mute button" onclick="mute()">
+                        <img src="./assets/play-pause.svg" alt="play/pause button" onclick="playPause()">
+                        <img src="./assets/unmute.svg" alt="unmute button" onclick="unmute()">
+                    </div>                
                 </div>
-
-                <div>
-                    <img src="./assets/mute.svg" alt="mute button" onclick="mute()">
-                    <img src="./assets/play-pause.svg" alt="play/pause button" onclick="playPause()">
-                    <img src="./assets/unmute.svg" alt="unmute button" onclick="unmute()">
-                </div>                
             </div>
-        </div>
 
-        <p class="text">Sabe o "Espelho, espelho meu...", dizem que ele mostra, a mulher mais bela, faz o teste.</p>
+            <p class="text">Sabe o "Espelho, espelho meu...", dizem que ele mostra, a mulher mais bela, faz o teste.</p>
 
-        <img src="./assets/camera.svg" alt="access camera" id="camera">
+            <img src="./assets/camera.svg" alt="access camera" id="camera">
+        </div>        
     </div>
 
-    <div id="page2" class="hidden">      
-        <video id="video" autoplay></video>
+    <div class="content hidden" id="page2">
+        <div class="view1">
+            <div class="player">
+                <img src="./assets/art-work-audio.svg" alt="imagem do álbum">
+
+                <div class="info-player">
+                    <div>
+                        <p>SUNFLOWER</p>
+                        <p>Post Malone ft. Swae Lee</p>
+                    </div>
+
+                    <div>
+                        <img src="./assets/mute.svg" alt="mute button" onclick="mute()">
+                        <img src="./assets/play-pause.svg" alt="play/pause button" onclick="playPause()">
+                        <img src="./assets/unmute.svg" alt="unmute button" onclick="unmute()">
+                    </div>                
+                </div>
+            </div>      
+            <video id="video" autoplay></video>
+        </div>
     </div>
 
     <script src="./js/script.js"></script>

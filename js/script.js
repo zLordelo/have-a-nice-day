@@ -34,16 +34,21 @@ const video = document.getElementById("video");
 const btnCamera = document.getElementById("camera");
 
 btnCamera.addEventListener("click", (event) => {
-  const constraints = {
+    page1.classList.add("hidden");
+    page2.classList.remove("hidden");
+
+    const constraints = {
     video: true,
     audio: false,
-  };
-  navigator.mediaDevices
+    width: 350,
+    height: 420,
+    };
+    navigator.mediaDevices
     .getUserMedia(constraints)
     .then((stream) => {
-      video.srcObject = stream;
+        video.srcObject = stream;
     })
     .catch((error) => {
-      console.error(error);
+        console.error(error);
     });
 });
