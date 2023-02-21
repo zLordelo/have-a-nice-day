@@ -51,5 +51,11 @@ btnCamera.addEventListener("click", (event) => {
     })
     .catch((error) => {
         console.error(error);
+        page2.innerHTML = 
+            `<div class='content'>
+                <p class='text'>Vi que você nao aceitou o acesso a camera :(
+                <br>Bloqueia o celular, veja no reflexo.<br>Tem uma mulher muito gata olhando.<br><br>
+                Te desejo uma ótima semana. &#127803;&#128147;</p>
+            </div>`
     });
 });
