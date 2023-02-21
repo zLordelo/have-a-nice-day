@@ -38,12 +38,12 @@ btnCamera.addEventListener("click", (event) => {
     page2.classList.remove("hidden");
 
     const constraints = {
-    video: true,
+    video: { facingMode: "user" },
     audio: false,
     width: 350,
     height: 420,
     };
-    
+
     navigator.mediaDevices
     .getUserMedia(constraints)
     .then((stream) => {
