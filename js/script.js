@@ -3,7 +3,8 @@ const startPage = document.querySelector("#startPage");
 const btnStart = document.querySelector("#startButton");
 const page1 = document.querySelector("#page1");
 const page2 = document.querySelector("#page2");
-const btnPlayPause = document.querySelector("#playPause");
+const btnPlayPause1 = document.querySelector("#playPause1");
+const btnPlayPause2 = document.querySelector("#playPause2");
 
 btnStart.addEventListener("click", () => {
   startPage.classList.add("hidden");
@@ -14,10 +15,12 @@ btnStart.addEventListener("click", () => {
 let playPause = () => {
   if (music.paused) {
     music.play();
-    btnPlayPause.src = './assets/pause.svg'
+    btnPlayPause1.src = './assets/pause.svg'
+    btnPlayPause2.src = './assets/pause.svg'
   } else {
     music.pause();
-    btnPlayPause.src = './assets/play.svg'
+    btnPlayPause1.src = './assets/play.svg'
+    btnPlayPause2.src = './assets/play.svg'
   }
 };
 
