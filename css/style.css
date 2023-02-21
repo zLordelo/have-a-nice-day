@@ -140,6 +140,7 @@ video {
 #page2 *{
     font-family: 'Rubik', sans-serif;
     font-style: italic;
+    font-weight: 700;
 }
 
 #page2 .video-cover p:first-child {
@@ -148,6 +149,12 @@ video {
 
 #page2 .video-cover p:last-child {
     margin-top: 15px;
+}
+
+#page2 #error p {
+    text-align: justify;
+    font-style: normal;
+    font-weight: 300;
 }
 
 footer {
