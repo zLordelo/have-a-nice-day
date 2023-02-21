@@ -54,7 +54,7 @@ btnCamera.addEventListener("click", (event) => {
         page2.innerHTML = 
             `<div class='content'>
                 <p class='text'>Vi que você nao aceitou o acesso a camera :(
-                <br>Bloqueia o celular, veja no reflexo.<br>Tem uma mulher muito gata olhando.<br><br>
+                <br>Bloqueia o celular, foca no reflexo.<br>Percebe que tem uma mulher muito linda olhando, é você!<br><br>
                 Te desejo uma ótima semana. &#127803;&#128147;</p>
             </div>`
     });
